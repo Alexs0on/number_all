@@ -306,7 +306,7 @@ def main() -> None:
     posts.display("Итоговый список после добавления")
 
     print("Программа завершена")
-
+    print("ORIGINAL VERSION")
 
 if __name__ == "__main__":
     main()
