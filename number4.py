@@ -203,9 +203,9 @@ class PostCollection(CollectionBase):
             [
                 Post(1, "alex_dev", "Изучаю Python, это круто!", 15),
                 Post(2, "maria_code", "Кто знает, как работать с CSV?", 8),
-                Post(3, "ivan_prog", "Выложил новый проект на GitHub", 42),
+                Post(3, "ivan_prog", "Выложил новый проект на GitHub", 12),
                 Post(4, "anna_web", "Всем хорошего дня!", 23),
-                Post(5, "dmitry_ai", "Нейросети меняют мир", 57),
+                Post(5, "dmitry_ai", "Нейросети меняют мир", 50),
                 Post(6 , "oleg_po" , "Архитектура .xml" , 28) ,
 
             ]
