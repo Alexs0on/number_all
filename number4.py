@@ -12,7 +12,7 @@ from typing import Any, Iterable, Iterator, Optional
 
 
 class Post:
-    """Одна запись из CSV."""
+    #Одна запись из .CSV
 
     __slots__ = ("id", "nickname", "text", "likes")
     _allowed_fields = {"id", "nickname", "text", "likes"}
@@ -146,13 +146,13 @@ class PostCollection(CollectionBase):
         return sorted(self._items, key=lambda post: post.likes, reverse=reverse)
 
     def filter_by_likes(self, threshold: int) -> Iterator[Post]:
-        # Генератор
+        # Генератор по лайкам
         for post in self._items:
             if post.likes > threshold:
                 yield post
 
     def filter_by_nickname(self, fragment: str) -> Iterator[Post]:
-        # Генератор
+        # Генератор по нику
         fragment = fragment.lower().strip()
         for post in self._items:
             if fragment in post.nickname.lower():
@@ -305,7 +305,7 @@ def main() -> None:
     PostCollection.save_csv(csv_file, posts)
     posts.display("Итоговый список после добавления")
 
-    print("Программа завершена.")
+    print("Программа завершена")
 
 
 if __name__ == "__main__":
