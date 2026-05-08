@@ -206,6 +206,8 @@ class PostCollection(CollectionBase):
                 Post(3, "ivan_prog", "Выложил новый проект на GitHub", 42),
                 Post(4, "anna_web", "Всем хорошего дня!", 23),
                 Post(5, "dmitry_ai", "Нейросети меняют мир", 57),
+                Post(6 , "oleg_po" , "Архитектура .xml" , 28) ,
+
             ]
         )
         PostCollection.save_csv(filepath, sample)
